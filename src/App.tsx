@@ -20,13 +20,13 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <FinanceProvider>
-        <SidebarProvider>
-          <div className="min-h-screen flex w-full">
-            <AppSidebar />
-            <div className="flex-1">
-              <Toaster />
-              <Sonner />
-              <BrowserRouter>
+        <BrowserRouter>
+          <SidebarProvider>
+            <div className="min-h-screen flex w-full">
+              <AppSidebar />
+              <div className="flex-1">
+                <Toaster />
+                <Sonner />
                 <Routes>
                   <Route path="/" element={<Dashboard />} />
                   <Route path="/expenses" element={<Expenses />} />
@@ -35,10 +35,10 @@ const App = () => (
                   <Route path="/settings" element={<Settings />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
-              </BrowserRouter>
+              </div>
             </div>
-          </div>
-        </SidebarProvider>
+          </SidebarProvider>
+        </BrowserRouter>
       </FinanceProvider>
     </TooltipProvider>
   </QueryClientProvider>
