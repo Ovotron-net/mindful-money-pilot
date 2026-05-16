@@ -1,5 +1,17 @@
-## Sample Pull Request Template Description
+## Summary
 
-This is a sample pull request template. You can customize it to fit your project's needs.
+Describe the changes in this pull request.
 
-Don't forget to commit your template file to the repository so that it can be used for future pull requests!
+## Motivation
+
+Explain why these changes are needed.
+
+## Testing
+
+Describe the tests you ran or the steps you took to verify the changes.
+
+## Checklist
+
+- [ ] I have tested my changes.
+- [ ] I have updated relevant documentation, if needed.
+- [ ] I have reviewed my changes before submitting this pull request.
